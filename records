@@ -1,0 +1,60 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Full Name</th>
+      <th>Phone No</th>
+      <th>Dmat</th>
+      <th>Real Estate</th>
+      <th>Insurance</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>pramod wadekar</td>
+      <td>9552250648</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>2023-03-11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>tarak mehta</td>
+      <td>9998292822</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>2023-03-11</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>tarak mehta</td>
+      <td>9998292823</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>2023-03-11</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>pramod wadekar</td>
+      <td>9998292823</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>2023-03-11</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>mayur wadekar</td>
+      <td>9998292823</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>2023-03-11</td>
+    </tr>
+  </tbody>
+</table>

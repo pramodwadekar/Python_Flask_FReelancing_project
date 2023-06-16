@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Manager Form
+    </title>
+  </head>
+<div class="p-2">
+    <form action="/form_manager" method="post">
+      <style>
+        input.checkbox{
+          width:calc(15px + (50-40)*((100vw - 320px)/(1440 -320)));
+          height: calc(15px + (50-40)*((100vw - 320px)/(1440 -320)));
+          margin-right: calc(14px + (50-40)*((100vw - 320px)/(1440 -320)));
+          margin-bottom: calc(30px + (50-40)*((100vw - 320px)/(1440 -320)));
+          margin-top: calc(2px + (10-9)*((100vw - 320px)/(1440 -320)));
+        }
+        body {
+          background-color: aqua;
+          margin-left: 150px;
+          margin-right: 30px;
+          margin-top: 200px;
+          margin-bottom: 150px;
+
+        }
+      </style>
+      <body>
+        <div>
+      <input type="checkbox" class = "checkbox" name="p" id="send_newsletter" />
+      <label style = 'font-size: calc(15px + (80-40)*((100vw - 320px)/(1440 -320))); color: black;' for="send_newsletter">Manager Team</label>
+    </div>
+  </div>
+        <input type="checkbox" class = "checkbox" name="q" id="send_newsletter" />
+        <label style = 'font-size: calc(15px + (80-40)*((100vw - 320px)/(1440 -320))); margin-right: 115px; color: black;' for="send_newsletter">Sales Team</label>
+      </div>
+      <div>
+        <input type="submit" style = 'font-size: calc(14px + (80-40)*((100vw - 320px)/(1440 -320))); border-radius:calc(2px + (40-20)*((100vw - 320px)/(1440 -320))); margin-right: 360px; ' value="Submit"/>
+        <input type="submit" style = 'font-size: calc(14px + (80-40)*((100vw - 320px)/(1440 -320))); border-radius:calc(2px + (40-20)*((100vw - 320px)/(1440 -320))); margin-right: 360px; margin-top: 10px;' value="Logout"/>
+      </div>
+      </body>
+      </form>
+    </div>
+</html>

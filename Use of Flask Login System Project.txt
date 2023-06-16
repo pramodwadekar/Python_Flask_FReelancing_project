@@ -1,0 +1,33 @@
+Hello User's, 
+Steps for use This Application :-
+▪️you can click this link:
+http://demoprojects.pythonanywhere.com/
+
+▪️You have show login system. Login system have two username and password
+▪️1. For Manager Team 
+Username:- Admin 
+Password:- ABCD
+ 🔹 If Enter username and password you have show two checkbox 
+🔹1st is manager team and 2nd is sales team 
+
+🔹 If you choose manager team checkbox, you have show three buttons 
+1.Add 2.View 3.search. 
+
+if you click Add button you can add your data using form. And if you click view button you have show date box. Then you choose date for showing datewise data. and if you want to delete the data, you enter index number in box and click delete button then you have show delete data successful.
+if you click Search button to show name box Then you choose name for showing namewise data. and if you want to delete the data, you enter index number in box and click delete button then you have show delete data successful. if you click logout to logout page.
+
+
+🔹 If you choose sales team checkbox, you have show three buttons 
+1.Add 2.View 3.search. 
+
+if you click Add button you can add your data using form. And if you click view button you have show date box. Then you choose date for showing datewise data. and if you want to delete the data, you enter index number in box and click delete button then you have show delete data successful.
+if you click Search button to show name box Then you choose name for showing namewise data. and if you want to delete the data, you enter index number in box and click delete button then you have show delete data successful. if you click logout to logout page.
+
+
+▪️2.Login System  For  Sales Team
+Username:- Team
+Password:- EFGH
+ 
+
+If you Enter this username and password
+You redirect to sales team all data.

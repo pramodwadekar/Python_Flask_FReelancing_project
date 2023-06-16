@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Filtered Excel Data</title>
+</head>
+<body>
+    <h1>Next Filtered Excel Data</h1>
+    <table>
+    </head>
+    <form>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Phone No</th>
+                        <th>Dmat</th>
+                        <th>Real Estate</th>
+                        <th>Insurance</th>
+                        <th>Date</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contact in contacts %}
+                    <tr>
+                        <td>{{ contact['Full Name'] }}</td>
+                        <td><a href="tel:{{ contact['Phone No'] }}">{{ contact['Phone No'] }}</a></td>
+                        <td>{{ contact['Dmat'] }}</td>
+                        <td>{{ contact['Real Estate'] }}</td>
+                        <td>{{ contact['Insurance'] }}</td>
+                        <td>{{ contact['Date'] }}</td>
+                        
+                    {% endfor %}
+                </tbody>
+                
+            </table>
+    
+        </form>
+    </table>
+    <form action="/nexts" method="post">
+        <input type="hidden" name="name" value="{{ request.form['name'] }}">
+        <input type="hidden" name="start" value="{{ start }}">
+        <button type="submit">Next</button>
+    </form>
+    {% if start > 5 %}
+    <form action="/previouss" method="post">
+        <input type="hidden" name="name" value="{{ request.form['name'] }}">
+        <input type="hidden" name="start" value="{{ start-5 }}">
+        <button type="submit">previous</button>
+    </form>
+    {% endif %}
+</body>
+</html>

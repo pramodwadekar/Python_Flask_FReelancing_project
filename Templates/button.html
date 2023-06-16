@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+            background-color: #cafa72;
+            font-family: Verdana;
+            text-align: center;
+            margin-top: 50px;
+        }
+      /* Apply general styles to buttons */
+      input {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 50px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+     
+  
+      /* Style for the second button */
+      .button2 {
+        margin-top: 50px;
+        background-color: #008CBA;
+        font-size: 40px;
+        width: 150px;
+      }
+  
+      /* Apply responsive styles for smaller screens */
+      @media screen and (max-width: 992px) {
+        body {
+          width: 100%;
+          margin-top: 150px;
+          font-size: 20px;
+
+        }
+        .button2 {
+         
+         margin-bottom: 10px;
+         font-size: 40px;
+         width: 160px;
+
+       }
+      }
+      
+    </style>
+  </head>
+    <form action="/form_add" method="post">
+    
+      <body>
+        <h1>Manager Team</h1>
+        <div>
+          <input type="submit" name="add" class="button2" value="Add"/>
+       <br>
+        <input type="submit" name="view" class="button2"   value="View"/>
+        <br>
+        <input type="submit" name = "search" class = "button2" value="Search"/>
+      </div>
+      </body>
+      </form>
+    </div>
+</html>

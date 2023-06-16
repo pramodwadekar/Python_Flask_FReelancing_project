@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manager Team Data</title>
+</head>
+<body style="background-color: rgb(241, 255, 181);">
+    <h1> Manager Team Data</h1>
+    <table>
+    </head>
+    <style>
+        .button {
+            background-color: aqua;
+            font-size: 20px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            width: 100px;
+    }
+    .button1 {
+            background-color: aqua;
+             font-size: 20px;
+             margin-top: 2px;
+             margin-bottom: 5px;
+             border-radius: 10px;
+             width: 100px;
+    }
+    
+    
+        </style>
+    <form action="/delete" method="post">
+            <table border="1" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Full Name</th>
+                        <th>Phone No</th>
+                        <th>Dmat</th>
+                        <th>Real Estate</th>
+                        <th>Insurance</th>
+                        <th>Date</th>
+                        <th>Feedback</th>
+
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in contacts %}
+                    <tr>
+                        <td>{{ row['index']+1 }}</td>
+                        <td>{{ row['Full Name'] }}</td>
+                        <td><a href="tel:{{ row['Phone No'] }}">{{ row['Phone No'] }}</a></td>
+                        <td>{{ row['Dmat'] }}</td>
+                        <td>{{ row['Real Estate'] }}</td>
+                        <td>{{ row['Insurance'] }}</td>
+                        <td>{{ row['Date'] }}</td>
+                        <td>{{ row['Feedback'] }}</td>
+                        
+                        
+                    {% endfor %}
+                    <label>Enter Index Number to Delete:</label>
+        <input type="text" name="row_index">
+        <input type="submit" value="Delete">
+                </tbody>
+                
+            </table>
+    
+        </form>
+    </table>
+    
+    <form action="/home" method="post">
+        <input type="hidden" name="date" value="{{ request.form['date'] }}">
+        <input type="hidden" name="start" value="{{ start+10 }}">
+        <button type="submit" class="button">Next</button>
+    </form>
+    {% if start > 0 %}
+        <form action="/home" method="post">
+            <input type="hidden" name="date" value="{{ request.form['date'] }}">
+            <input type="hidden" name="start" value="{{ start-10 }}">
+            <button type="submit" class="button1">Previous</button>
+        </form>
+    {% endif %}
+   <button class="button"> <a href="{{ url_for('add') }}">Logout</a></button>
+</body>
+</html>
